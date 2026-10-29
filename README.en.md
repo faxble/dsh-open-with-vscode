@@ -1,9 +1,5 @@
 [中文](README.md) | **English**
 
-<p align="center">
-  <img src="icon.svg" width="96" alt="dsh-open-in-vscode" />
-</p>
-
 # dsh-open-in-vscode
 
 > A DeepSeek Harness plugin that fixes the broken "Open in VS Code" flow: adds a button **left of** the built-in "Open In..." control in the session header, opening the current session's workspace directory in VS Code with one click.

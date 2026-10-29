@@ -1,9 +1,5 @@
 **中文** | [English](README.en.md)
 
-<p align="center">
-  <img src="icon.svg" width="96" alt="dsh-open-in-vscode" />
-</p>
-
 # dsh-open-in-vscode
 
 > 修复 DeepSeek Harness 桌面端「用 VS Code 打开」失效问题的插件：在会话头部「打开方式」**左侧**新增一个按钮，一键在 VS Code 中打开当前会话的工作区目录。
