@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "在 VS Code 中打开",
+    "description": "在会话头部的“打开方式”左侧新增一个按钮，一键用 VS Code 打开当前工作区目录（绕开内置打开方式在桌面端因 ELECTRON_RUN_AS_NODE 泄漏而无法启动 VS Code 的问题）。"
+  }
+}

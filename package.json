@@ -1,0 +1,28 @@
+{
+  "name": "dsh-open-in-vscode",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "在 VS Code 中打开当前工作区的 DSH 插件：修复内置 open-in-app 因 ELECTRON_RUN_AS_NODE 泄漏导致「用 VS Code 打开」失效的问题。Open current workspace in VS Code; fixes the built-in open-in-app ELECTRON_RUN_AS_NODE leak.",
+  "license": "MIT",
+  "keywords": ["dsh", "dsh-plugin", "vscode", "open-in-app"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faxble/dsh-open-in-vscode.git"
+  },
+  "homepage": "https://github.com/faxble/dsh-open-in-vscode",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

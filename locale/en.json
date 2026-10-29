@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Open in VS Code",
+    "description": "Adds a button to the left of the built-in \"Open In...\" in the session header that opens the current workspace directory in VS Code, working around the desktop bug where the built-in launcher fails because ELECTRON_RUN_AS_NODE leaks into the editor."
+  }
+}
