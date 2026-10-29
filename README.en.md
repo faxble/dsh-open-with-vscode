@@ -52,6 +52,10 @@ Install this repository directory from the DSH plugin manager page (or add it as
 
 The button only appears when the session has a working directory; on launch failure an error notice is shown under the button.
 
+The tooltip follows the DSH language automatically — in an English UI it reads "Open in VS Code":
+
+![English tooltip](docs/button-tooltip-en.png)
+
 ## How it works
 
 - **Host side**: provides an independent `POST /open-in-vscode` route (same auth fence and request validation as the built-in), locates `Code.exe` (LOCALAPPDATA / Program Files / App Paths registry / PATH fallback), and launches it `detached` with a scrubbed environment that excludes `ELECTRON_RUN_AS_NODE`
