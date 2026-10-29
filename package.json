@@ -7,9 +7,9 @@
   "keywords": ["dsh", "dsh-plugin", "vscode", "open-in-app"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/faxble/dsh-open-in-vscode.git"
+    "url": "https://github.com/faxble/dsh-open-with-vscode.git"
   },
-  "homepage": "https://github.com/faxble/dsh-open-in-vscode",
+  "homepage": "https://github.com/faxble/dsh-open-with-vscode",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
