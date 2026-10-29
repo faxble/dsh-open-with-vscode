@@ -8,7 +8,7 @@
 
 > A DeepSeek Harness plugin that fixes the broken "Open in VS Code" flow: adds a button **left of** the built-in "Open In..." control in the session header, opening the current session's workspace directory in VS Code with one click.
 
-![Button placement](docs/open-in-vscode-button.png)
+![Button in the session header with its English tooltip](docs/button-tooltip-en.png)
 
 ## Why this plugin
 
@@ -52,9 +52,7 @@ Install this repository directory from the DSH plugin manager page (or add it as
 
 The button only appears when the session has a working directory; on launch failure an error notice is shown under the button.
 
-The tooltip follows the DSH language automatically — in an English UI it reads "Open in VS Code":
-
-![English tooltip](docs/button-tooltip-en.png)
+The tooltip follows the DSH language automatically — in an English UI it reads "Open in VS Code".
 
 ## How it works
 
