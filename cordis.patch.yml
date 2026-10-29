@@ -1,4 +1,4 @@
 - insert:
     - id: open-in-vscode
-      name: 'dsh-open-in-vscode'
+      name: 'dsh-open-with-vscode'
       config: {}

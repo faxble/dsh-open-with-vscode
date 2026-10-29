@@ -1,5 +1,5 @@
 {
-  "name": "dsh-open-in-vscode",
+  "name": "dsh-open-with-vscode",
   "version": "1.0.0",
   "type": "module",
   "description": "在 VS Code 中打开当前工作区的 DSH 插件：修复内置 open-in-app 因 ELECTRON_RUN_AS_NODE 泄漏导致「用 VS Code 打开」失效的问题。Open current workspace in VS Code; fixes the built-in open-in-app ELECTRON_RUN_AS_NODE leak.",

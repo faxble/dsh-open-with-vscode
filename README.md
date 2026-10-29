@@ -40,7 +40,7 @@ DSH 桌面宿主以 `ELECTRON_RUN_AS_NODE=1` 启动（桌面壳以 Electron 的 
 ```yaml
 - insert:
     - id: open-in-vscode
-      name: dsh-open-in-vscode
+      name: dsh-open-with-vscode
       config: {}
 ```
 

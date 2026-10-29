@@ -40,7 +40,7 @@ Install this repository directory from the DSH plugin manager page (or add it as
 ```yaml
 - insert:
     - id: open-in-vscode
-      name: dsh-open-in-vscode
+      name: dsh-open-with-vscode
       config: {}
 ```
 

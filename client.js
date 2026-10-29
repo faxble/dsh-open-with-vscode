@@ -6,12 +6,12 @@
  * 会话的工作区目录（cwd）POST 到本包的 Host 路由 /open-in-vscode 启动 VS Code。
  */
 window.__ModuleLoader__.load({
-  id: 'dsh-open-in-vscode',
+  id: 'dsh-open-with-vscode',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
 
-    const CSS_ID = 'dsh-open-in-vscode/button.css';
+    const CSS_ID = 'dsh-open-with-vscode/button.css';
     const css = [
       '.dshOpenInVscode{flex:none;align-self:center;display:inline-flex;align-items:center;position:relative}',
       '.dshOpenInVscode_button{box-sizing:border-box;border:.5px solid var(--dsw-alias-border-l4);border-radius:var(--dsw-radius-sm);height:24px;color:var(--dsw-alias-label-primary);background:transparent;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:3px 6px}',
@@ -27,7 +27,7 @@ window.__ModuleLoader__.load({
       if (typeof document === 'undefined') return () => {};
       if (document.querySelector(`style[data-plugin-css="${CSS_ID}"]`) !== null) return () => {};
       const tag = document.createElement('style');
-      tag.dataset.plugin = 'dsh-open-in-vscode';
+      tag.dataset.plugin = 'dsh-open-with-vscode';
       tag.dataset.pluginCss = CSS_ID;
       tag.textContent = css;
       document.head.appendChild(tag);
@@ -36,7 +36,7 @@ window.__ModuleLoader__.load({
       };
     }
 
-    const NS = 'open-in-vscode';
+    const NS = 'open-with-vscode';
     const zh = {
       'open.tooltip': '在 VS Code 中打开',
       'open.failed': '打开失败，请重试',
