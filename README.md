@@ -1,6 +1,6 @@
 **中文** | [English](README.en.md)
 
-# dsh-open-in-vscode
+# dsh-open-with-vscode
 
 > 修复 DeepSeek Harness 桌面端「用 VS Code 打开」失效问题的插件：在会话头部「打开方式」**左侧**新增一个按钮，一键在 VS Code 中打开当前会话的工作区目录。
 
@@ -25,13 +25,23 @@ DSH 桌面宿主以 `ELECTRON_RUN_AS_NODE=1` 启动（桌面壳以 Electron 的 
 
 ## 安装
 
-### 通过 dsh-market（待上架）
+### 通过 dsh-market（已上架）
 
-等待 dsh-market 上架后，在插件市场中搜索 **open-in-vscode** 一键安装即可。
+已在 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 目录收录上架，在插件市场中搜索 **open-in-vscode**（或 `faxble/dsh-open-with-vscode`）一键安装即可。
 
-### 手动安装（抢先体验 / 本地开发）
+### 通过 npm
 
-在 DSH 插件管理页安装本仓库目录（或发布到 npm 后作为依赖安装），并确保 profile 的 patch 中插入：
+```bash
+dsh plugin --profile <profile> add dsh-open-with-vscode
+# 或
+npm install dsh-open-with-vscode
+# 或
+pnpm add dsh-open-with-vscode
+```
+
+### 手动安装（本地开发）
+
+从 DSH 插件管理页安装本仓库目录，并确保 profile 的 patch 中插入：
 
 ```yaml
 - insert:

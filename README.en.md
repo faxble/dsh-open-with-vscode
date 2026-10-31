@@ -1,6 +1,6 @@
 [中文](README.md) | **English**
 
-# dsh-open-in-vscode
+# dsh-open-with-vscode
 
 > A DeepSeek Harness plugin that fixes the broken "Open in VS Code" flow: adds a button **left of** the built-in "Open In..." control in the session header, opening the current session's workspace directory in VS Code with one click.
 
@@ -25,13 +25,23 @@ This plugin does **not** modify the built-in `open-in-app`. It provides its own 
 
 ## Installation
 
-### Via dsh-market (pending)
+### Via dsh-market (listed)
 
-Once listed in dsh-market, install with one click by searching **open-in-vscode** in the plugin market.
+Listed in the [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) catalog — install with one click by searching **open-in-vscode** (or `faxble/dsh-open-with-vscode`) in the plugin market.
 
-### Manual install (early access / local development)
+### Via npm
 
-Install this repository directory from the DSH plugin manager page (or add it as a dependency after publishing to npm), and make sure the profile patch inserts:
+```bash
+dsh plugin --profile <profile> add dsh-open-with-vscode
+# or
+npm install dsh-open-with-vscode
+# or
+pnpm add dsh-open-with-vscode
+```
+
+### Manual install (local development)
+
+Install this repository directory from the DSH plugin manager page, and make sure the profile patch inserts:
 
 ```yaml
 - insert:
